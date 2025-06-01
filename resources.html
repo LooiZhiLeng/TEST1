@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Crafting Compelling Stories</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+      color: #333;
+    }
+
+    header {
+      background-color: #6a11cb;
+      color: white;
+      padding: 2.5rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      opacity: 0.9;
+    }
+
+    nav {
+      background-color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: #6a11cb;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #000;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2.5rem;
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    main h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.5rem;
+    }
+
+    table th,
+    table td {
+      padding: 1rem;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    table th {
+      background-color: #f5f5f5;
+      color: #6a11cb;
+      font-size: 1.1rem;
+    }
+
+    table td a {
+      color: #6a11cb;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    table td a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+
+      table,
+      table thead,
+      table tbody,
+      table th,
+      table td,
+      table tr {
+        display: block;
+      }
+
+      table tr {
+        margin-bottom: 1rem;
+        background-color: #fafafa;
+        padding: 1rem;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+
+      table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+      }
+
+      table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 1rem;
+        width: 45%;
+        padding-right: 1rem;
+        white-space: nowrap;
+        font-weight: bold;
+        color: #6a11cb;
+        text-align: left;
+      }
+
+      table th {
+        display: none;
+      }
+    }
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Crafting Compelling Stories</h1>
+    <p>The Path to Becoming a Digital Content Creator</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="step-by-step.html">Step by Step</a>
+    <a href="resources.html">Resources</a>
+  </nav>
+
+  <main>
+    <h1>Inspiration & Resources</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Field</th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Name">Ali Abdaal</td>
+          <td data-label="Field">Productivity & Content Strategy</td>
+          <td data-label="Link">
+            <a href="https://aliabdaal.com" target="_blank">
+              <i class="fas fa-globe"></i> Website
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td data-label="Name">Sara Dietschy</td>
+          <td data-label="Field">Tech & Creativity</td>
+          <td data-label="Link">
+            <a href="https://www.youtube.com/user/saradietschy" target="_blank">
+              <i class="fab fa-youtube"></i> YouTube
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td data-label="Name">Coursera</td>
+          <td data-label="Field">Online Courses</td>
+          <td data-label="Link">
+            <a href="https://www.coursera.org" target="_blank">
+              <i class="fas fa-graduation-cap"></i> Coursera
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+</body>
+
+<footer style="background-color: #6a11cb; color: white; text-align: center; padding: 2rem 1rem;">
+  <p style="margin: 0;">&copy; SMM30803 Assignment 1</p>
+</footer>
+
+</html>
